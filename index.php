@@ -1,1 +1,4 @@
-<?php echo "hello nhom 3"; ?>
+<?php
+    include_once ('view/home/index.php');
+?>
+
