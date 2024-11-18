@@ -42,23 +42,21 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php
-                                foreach ($listDanhMuc as $key => $value) {
-                                    ?>
-                                    <tr>
-                                        <td><?= $value['id_danh_muc'] ?></td>
-                                        <td><?= $value['ten_danh_muc'] ?></td>
-                                        <td>
-                                            <div class="d-flex">
-                                                <a class="btn btn-secondary" href="">Sửa</a>
-                                                <a class="btn btn-danger" href="">Xóa</a>
-
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <?php
-                                }
-                                ?>
+                            <?php  foreach ($listDanhMuc as $key => $value){ ?>
+                            <tr>
+                                <td><?= $value['id_danh_muc'] ?></td>
+                                <td><?= $value['ten_danh_muc'] ?></td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <a href="index.php?action=suadm&id_danh_muc=<?= $value['id_danh_muc'] ?>" 
+                                           class="btn btn-secondary">Sửa</a>
+                                        <a href="index.php?action=xoadm&id_danh_muc=<?= $value['id_danh_muc'] ?>" 
+                                           class="btn btn-danger">Xóa</a>
+                                           
+                                    </div>
+                                </td>
+                            </tr>
+                        <?php } ?>
                             </tbody>
                         </table>
                     </div>
