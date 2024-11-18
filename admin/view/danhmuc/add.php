@@ -30,6 +30,7 @@ include_once("./view/layouts/header.php");
                         <div class="d-flex">
                             <input type="submit" name="them" value="Thêm" class="btn btn-primary">
                             <input type="reset" value="Nhập lại" class="btn btn-secondary">
+                            <a href="index.php?action=listDanhMuc" ><input type="button" class="btn btn-secondary" value="Danh Sách"></a>
                         </div>
                         <?php
                         if (isset($thongbao) && $thongbao != "") {

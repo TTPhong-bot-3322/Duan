@@ -8,6 +8,14 @@ if (isset($_GET['action']) && $_GET['action'] != '') {
         case "listDanhMuc":
             include_once 'controller/danhmuc/index.php';
             break;
+        case "xoadm":
+            include_once 'controller/danhmuc/delete.php';
+            break;
+        case "suadm":
+            include_once 'controller/danhmuc/update.php';
+            break;
+        case "updatedm":
+            include_once 'controller/danhmuc/update.php';
     }
 } else {
     include_once 'controller/dashboard/index.php';
