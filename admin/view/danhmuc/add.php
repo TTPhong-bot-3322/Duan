@@ -19,7 +19,7 @@ include_once("./view/layouts/header.php");
         <section class="section">
             <div class="card">
                 <div class="card-header">
-                    Form thêm danh mục
+                Form thêm sản phẩm 
                 </div>
                 <div class="card-body">
                     <form action="index.php?action=adddm" method="post">

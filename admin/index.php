@@ -16,6 +16,22 @@ if (isset($_GET['action']) && $_GET['action'] != '') {
             break;
         case "updatedm":
             include_once 'controller/danhmuc/update.php';
+            break;
+        case "listSanPham":
+            include_once 'controller/sanpham/index.php';
+            break;
+        case "addsp":  
+            include_once 'controller/sanpham/add.php';     
+            break;
+        case "xoasp":
+            include_once 'controller/sanpham/delete.php';
+            break;
+            case "updatesp":
+                include_once 'controller/sanpham/update.php';
+                break;
+        default:
+            include_once 'controller/dashboard/index.php';
+            break;
     }
 } else {
     include_once 'controller/dashboard/index.php';
