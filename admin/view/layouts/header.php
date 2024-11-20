@@ -49,6 +49,12 @@
                                 <span>Danh mục</span>
                             </a>
                         </li>
+                        <li class="sidebar-item  active">
+                            <a href="index.php?action=listSanPham" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+                                <span>Sản Phẩm</span>
+                            </a>
+                        </li>
 
                     </ul>
                 </div>
